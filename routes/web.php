@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $ruta = env('APP_URL') . '/admin/login';
+    return redirect($ruta);
 });
